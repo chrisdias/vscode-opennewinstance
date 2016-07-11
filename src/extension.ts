@@ -12,12 +12,16 @@ export function activate(context: vscode.ExtensionContext) {
     console.log('vscode-opennewinstance is now active');
 
     // The explorer/context menu contribution receives the URI to the file/folder
-    let disposable = vscode.commands.registerCommand('extension.openNewInstance', (e: vscode.Uri) => {
-        // Simply invoke the openFolder command, passing in the URI, and telling VS Code to open a new instance
+    let cmd1 = vscode.commands.registerCommand('extension.openNewInstance', (e: vscode.Uri) => {
         vscode.commands.executeCommand("vscode.openFolder", e, true);
     });
 
-    context.subscriptions.push(disposable);
+    let cmd2 = vscode.commands.registerCommand('extension.scopeToHere', (e: vscode.Uri) => {
+        vscode.commands.executeCommand("vscode.openFolder", e, false);
+    });
+
+    context.subscriptions.push(cmd1);
+    context.subscriptions.push(cmd2);
 }
 
 // this method is called when your extension is deactivated
