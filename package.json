@@ -3,10 +3,24 @@
     "displayName": "Open Folder Context Menus for VS Code",
     "description": "Quickly open a new instance of VS Code from the Explorer",
     "version": "0.0.1",
+    "author": "Chris Dias",
     "publisher": "chrisdias",
+    "galleryBanner": {
+        "color": "#37699A",
+        "theme": "dark"
+    },
+    "homepage": "https://github.com/chrisdias/vscode-opennewinstance/blob/master/README.md",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/chrisdias/vscode-opennewinstance.git"
+    },
+    "bugs": {
+        "url": "https://github.com/chrisdias/vscode-opennewinstance/issues"
+    },
     "engines": {
         "vscode": "^1.0.0"
     },
+    "license": "SEE LICENSE IN LICENSE.md",
     "categories": [
         "Other"
     ],

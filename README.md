@@ -12,3 +12,7 @@ This extension adds two new context menus to the Explorer Viewlet:
 Right click on a folder or file in the Explorer, choose **Open New Workbench Here** or **Scope Workbench to Here**.
 
 ![Preview](images/preview.png)
+
+## License
+
+[MIT](LICENSE.md)
