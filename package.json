@@ -37,17 +37,35 @@
             {
                 "command": "extension.scopeToHere",
                 "title": "Reopen Workbench Here"
+            },
+            {
+                "command": "extension.openNewWinHere",
+                "title": "Open New Window Here",
+                "category": "Files"
+            },
+            {
+                "command": "extension.reopenHere",
+                "title": "Reopen Here",
+                "category": "Files"
             }
         ],
         "menus": {
             "explorer/context": [
                 {
-                    "command": "extension.openNewInstance"
-                    ,"group": "navigation@1"
+                    "command": "extension.openNewInstance",
+                    "group": "navigation@1"
                 },
                 {
-                    "command": "extension.scopeToHere"
-                    ,"group": "navigation@1"
+                    "command": "extension.scopeToHere",
+                    "group": "navigation@1"
+                },
+                {
+                    "command": "extension.openNewWinHere",
+                    "group": "navigation@1"
+                },
+                {
+                    "command": "extension.reopenHere",
+                    "group": "navigation@1"
                 }
             ]
         }
