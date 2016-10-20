@@ -40,9 +40,10 @@ function openCommand(newWin) {
                 return;
             }
             file = path.resolve(file);
-            while (file !== "/" && files.length < 10) {
-                files.push(file);
+            files.push(file);
+            while (file !== "/" && files.length <= 10) {
                 file = path.dirname(file);
+                files.push(file);
             }
             vscode.window.showQuickPick(
                 files
