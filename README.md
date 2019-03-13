@@ -15,6 +15,11 @@ Right click on a folder or file in the Explorer, choose **Open New Workbench Her
 
 ## Changelog
 
+### 0.0.5
+* Add icon
+* Update TypeScript, VS Code engine, etc.
+* Webpack
+
 ### 0.0.2
 * Move commands to navigation section, fixes [Issue 1](https://github.com/chrisdias/vscode-opennewinstance/issues/1)
 * Change command "Scope Workbench to Here" to "Reopen Workbench Here"

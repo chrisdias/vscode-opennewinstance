@@ -2,13 +2,14 @@
     "name": "vscode-opennewinstance",
     "displayName": "Open Folder Context Menus for VS Code",
     "description": "Quickly open a new instance of VS Code from the Explorer",
-    "version": "0.0.4",
+    "version": "0.0.5",
     "author": "Chris Dias",
     "publisher": "chrisdias",
     "galleryBanner": {
         "color": "#37699A",
         "theme": "dark"
     },
+    "icon": "images/Open_file.png",
     "homepage": "https://github.com/chrisdias/vscode-opennewinstance/blob/master/README.md",
     "repository": {
         "type": "git",
@@ -18,7 +19,7 @@
         "url": "https://github.com/chrisdias/vscode-opennewinstance/issues"
     },
     "engines": {
-        "vscode": "^1.0.0"
+        "vscode": "^1.32.0"
     },
     "license": "SEE LICENSE IN LICENSE.md",
     "categories": [
@@ -42,23 +43,26 @@
         "menus": {
             "explorer/context": [
                 {
-                    "command": "extension.openNewInstance"
-                    ,"group": "navigation@1"
+                    "command": "extension.openNewInstance",
+                    "group": "navigation@1"
                 },
                 {
-                    "command": "extension.scopeToHere"
-                    ,"group": "navigation@1"
+                    "command": "extension.scopeToHere",
+                    "group": "navigation@1"
                 }
             ]
         }
     },
     "scripts": {
-        "vscode:prepublish": "node ./node_modules/vscode/bin/compile",
-        "compile": "node ./node_modules/vscode/bin/compile -watch -p ./",
-        "postinstall": "node ./node_modules/vscode/bin/install"
+        "vscode:prepublish": "npm run compile",
+        "compile": "tsc -p ./",
+        "watch": "tsc -watch -p ./",
+        "postinstall": "node ./node_modules/vscode/bin/install",
+        "test": "npm run compile && node ./node_modules/vscode/bin/test"
     },
     "devDependencies": {
-        "typescript": "^1.8.5",
-        "vscode": "^0.11.0"
+        "typescript": "^3.1.4",
+        "vscode": "^1.1.25",
+        "@types/node": "^8.10.25"
     }
 }
