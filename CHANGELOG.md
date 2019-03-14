@@ -1,0 +1,12 @@
+
+## 0.0.6 13 Mar 2019
+* Don't activate on *
+
+## 0.0.5 13 Mar 2019
+* Add icon
+* Update TypeScript, VS Code engine, etc.
+* Webpack
+
+## 0.0.2 
+* Move commands to navigation section, fixes [Issue 1](https://github.com/chrisdias/vscode-opennewinstance/issues/1)
+* Change command "Scope Workbench to Here" to "Reopen Workbench Here"

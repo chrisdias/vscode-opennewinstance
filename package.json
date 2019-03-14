@@ -2,7 +2,7 @@
     "name": "vscode-opennewinstance",
     "displayName": "Open Folder Context Menus for VS Code",
     "description": "Quickly open a new instance of VS Code from the Explorer",
-    "version": "0.0.5",
+    "version": "0.0.6",
     "author": "Chris Dias",
     "publisher": "chrisdias",
     "galleryBanner": {
@@ -26,7 +26,8 @@
         "Other"
     ],
     "activationEvents": [
-        "*"
+        "onCommand:extension.openNewInstance",
+        "onCommand:extension.scopeToHere"
     ],
     "main": "./dist/extension",
     "contributes": {
