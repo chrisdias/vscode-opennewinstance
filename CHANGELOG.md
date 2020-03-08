@@ -1,4 +1,7 @@
 
+## 0.0.7 8 Mar 2020
+* Scope commands to folders
+
 ## 0.0.6 13 Mar 2019
 * Don't activate on *
 
