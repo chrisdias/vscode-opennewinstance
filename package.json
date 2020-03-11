@@ -45,13 +45,22 @@
             "explorer/context": [
                 {
                     "command": "extension.openNewInstance",
-                    "group": "navigation@1",
-                    "when": "explorerResourceIsFolder"
+                    "group": "navigation@1"
                 },
                 {
                     "command": "extension.scopeToHere",
                     "group": "navigation@1",
                     "when": "explorerResourceIsFolder"
+                }
+            ],
+            "commandPalette": [
+                {
+                    "command": "extension.openNewInstance",
+                    "when": "never"
+                },
+                {
+                    "command": "extension.scopeToHere",
+                    "when": "never"
                 }
             ]
         }

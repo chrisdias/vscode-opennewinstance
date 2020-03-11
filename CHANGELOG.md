@@ -1,6 +1,6 @@
 
-## 0.0.7 8 Mar 2020
-* Scope commands to folders
+## 0.0.7 11 Mar 2020
+* Fixes #7: Scope Reopen command to folders and remove commands from Command Palette
 
 ## 0.0.6 13 Mar 2019
 * Don't activate on *
