@@ -1,4 +1,7 @@
 
+## 0.0.8 16 Aug 2021
+* Fixes #10: Position menu items below built-ins
+
 ## 0.0.7 11 Mar 2020
 * Fixes #7: Scope Reopen command to folders and remove commands from Command Palette
 
