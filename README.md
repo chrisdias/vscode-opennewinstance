@@ -18,9 +18,9 @@ Right click on a folder in the Explorer, choose **Open New Workbench Here** or *
 
 The `repository` field in `package.json` points to `github.dev`. Override this to ensure links to artifacts are correct when packaging.
 
-```
+``` bash
  vsce package --baseContentUrl https://github.com/chrisdias/vscode-opennewinstance/blob/HEAD --baseImagesUrl https://github.com/chrisdias/vscode-opennewinstance/raw/HEAD
- ```
+```
 
 ## License
 
