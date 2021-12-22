@@ -12,7 +12,7 @@
     "icon": "images/Open_file.png",
     "homepage": "https://github.com/chrisdias/vscode-opennewinstance/blob/master/README.md",
     "repository": {
-        "url": "https://github.dev/chrisdias/vscode-opennewinstance"
+        "url": "https://vscode.dev/github/chrisdias/vscode-opennewinstance"
     },
     "bugs": {
         "url": "https://github.com/chrisdias/vscode-opennewinstance/issues"
