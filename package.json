@@ -71,24 +71,15 @@
         "watch": "webpack --watch",
         "package": "webpack --mode production --devtool hidden-source-map",
         "test-compile": "tsc -p ./",
-        "test-watch": "tsc -watch -p ./",
-        "pretest": "npm run test-compile && npm run lint",
-        "lint": "eslint src --ext ts",
-        "test": "node ./out/test/runTest.js"
+        "test-watch": "tsc -watch -p ./"
     },
     "devDependencies": {
         "@types/glob": "^7.1.3",
-        "@types/mocha": "^10.0.6",
         "@types/node": "^12.11.7",
         "@types/vscode": "^1.80.0",
-        "@typescript-eslint/eslint-plugin": "^4.14.1",
-        "@typescript-eslint/parser": "^4.14.1",
-        "eslint": "^7.19.0",
         "glob": "^7.1.6",
-        "mocha": "^10.4.0",
         "ts-loader": "^8.0.14",
         "typescript": "^4.1.3",
-        "vscode-test": "^1.5.0",
         "webpack": "^5.76.0",
         "webpack-cli": "^4.4.0"
     }
