@@ -7,16 +7,18 @@ import * as vscode from 'vscode';
 // your extension is activated the very first time the command is executed
 export function activate(context: vscode.ExtensionContext) {
 
-    // Use the console to output diagnostic information (console.log) and errors (console.error)
-    // This line of code will only be executed once when your extension is activated
-    //console.log('vscode-opennewinstance is now active');
+    const regex = /Visual Studio Code/;
+    if (!regex.test(vscode.env.appName)) {
+        vscode.window.showErrorMessage("The Open Folder extension only works with Visual Studio Code.", { modal: true });
+        return;
+    }
 
     // The explorer/context menu contribution receives the URI to the file/folder
-    let cmd1 = vscode.commands.registerCommand('extension.openNewInstance', (e: vscode.Uri) => {
+    const cmd1 = vscode.commands.registerCommand('extension.openNewInstance', (e: vscode.Uri) => {
         vscode.commands.executeCommand("vscode.openFolder", e, true);
     });
 
-    let cmd2 = vscode.commands.registerCommand('extension.scopeToHere', (e: vscode.Uri) => {
+    const cmd2 = vscode.commands.registerCommand('extension.scopeToHere', (e: vscode.Uri) => {
         vscode.commands.executeCommand("vscode.openFolder", e, false);
     });
 
