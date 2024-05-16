@@ -1,4 +1,8 @@
 
+## 0.0.13 16 May 2024
+* Clean up dependencies
+* Block if not running in Stable or Insiders
+
 ## 0.0.8 16 Aug 2021
 * Fixes #10: Position menu items below built-ins
 

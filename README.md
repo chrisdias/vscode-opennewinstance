@@ -1,5 +1,7 @@
 # Open Folder Context Menus
 
+> Note: This extension only works in Visual Studio Code or Visual Studio Code - Insiders.
+
 ## Features
 
 This extension adds two new context menus to the Explorer:
