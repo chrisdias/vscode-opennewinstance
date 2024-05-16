@@ -12,7 +12,8 @@
     "icon": "images/Open_file.png",
     "homepage": "https://github.com/chrisdias/vscode-opennewinstance/blob/master/README.md",
     "repository": {
-        "url": "https://vscode.dev/github/chrisdias/vscode-opennewinstance"
+        "type": "git",
+        "url": "https://github.com/chrisdias/vscode-opennewinstance.git"
     },
     "bugs": {
         "url": "https://github.com/chrisdias/vscode-opennewinstance/issues"
@@ -25,6 +26,10 @@
         "Other"
     ],
     "main": "./dist/extension",
+    "activationEvents": [
+        "onCommand:extension.openNewInstance",
+        "onCommand:extension.scopeToHere"
+    ],
     "contributes": {
         "commands": [
             {
