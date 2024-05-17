@@ -1,4 +1,7 @@
 
+## 0.0.15 17 May 2024
+* Improve message when not running in Stable or Insiders
+
 ## 0.0.13 16 May 2024
 * Clean up dependencies
 * Block if not running in Stable or Insiders

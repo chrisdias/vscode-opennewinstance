@@ -9,7 +9,7 @@ export function activate(context: vscode.ExtensionContext) {
 
     const regex = /Visual Studio Code/;
     if (!regex.test(vscode.env.appName)) {
-        vscode.window.showErrorMessage("The Open Folder extension only works with Visual Studio Code.", { modal: true });
+        vscode.window.showErrorMessage("This extension can only be used with Visual Studio Code. Using it in any other product could cause unexpected behavior, performance, or security issues.", { modal: true });
         return;
     }
 
